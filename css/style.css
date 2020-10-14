@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "VT323";
+    font-weight:400;
+    font-size: 20px;
+    line-height: 1.7;
+    color:#777;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: repeat(3,1fr);
+    align-items: start;
+    overflow: hidden;
+    padding: 40px 80px;
+}
+
+.receipt--1,
+.receipt--2,
+.receipt--3{
+    padding: 20px 40px;
+}
+
+.receipt--1{
+    display: grid;
+    grid-template-rows: repeat(6,min-content);
+    grid-column: 1/2;
+    align-self: start;
+    justify-self: center;
+
+}
+
+h1{grid-row: 1/2;}
+
+
+.receipt--2{
+    display: grid;
+    grid-template-rows: repeat(5,min-content);
+    grid-column: 2/3;
+    align-self: start;
+    justify-self: center;
+
+}
+
+.receipt--3{
+    display: grid;
+    grid-column: 3/-1;
+    align-self: start;
+    justify-self: center;
+}
